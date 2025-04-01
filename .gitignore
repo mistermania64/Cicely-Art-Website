@@ -398,3 +398,10 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
+
+# User Defined Exceptions
+*.mp4
+video\animations\Old Uncompressed Animations
+animations-old.html
+animations-flex-col.html
+fine-art-grid-practice.html
