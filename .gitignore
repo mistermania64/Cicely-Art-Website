@@ -402,6 +402,7 @@ FodyWeavers.xsd
 # User Defined Exceptions
 *.mp4
 video\animations\Old Uncompressed Animations
+indexOld.html
 animations-old.html
 animations-flex-col.html
 fine-art-grid-practice.html

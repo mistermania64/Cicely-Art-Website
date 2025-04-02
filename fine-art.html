@@ -12,7 +12,7 @@
     <div id = "flex-wrapper">
         <div id="mobileNav"> <!--Sidebar menu-->
             <h1 style = "padding-left: 6%; padding-top: 3%;">
-                <a href = "aboutMe.html" id = "nameLink">Cicely Parris</a>
+                <a href = "index.html" id = "nameLink">Cicely Parris</a>
             </h1>
 
             <br>
@@ -31,7 +31,7 @@
             </div>
 
             <div class = "flex-col" id="sublinks">
-                <a href = "aboutMe.html">About</a>
+                <a href = "index.html">About</a>
                 <a href = "files/CV.pdf" target="_blank">CV</a>
             </div>
         </div>
@@ -39,60 +39,101 @@
         <div class = "flex-col centered">
             <label style="font-family: New-Class; padding: 2%; font-size: 40px;" class="centered">Fine Art</label>
             
-            <div class="flex-row centered" style="padding: 1%; gap: 2px;">
+            <div id = "image-container">
+                <img id="fullscreen-image" src="" onclick="toggleZoom(this)">
+                <div class="close-btn" onclick="closeFullScreen()">X</div>
+            </div>
 
-                <div id = "image-container">
-                    <img id="fullscreen-image" src="">
-                    <div class="close-btn" onclick="closeFullScreen()">X</div>
-                </div>
+            <div class="flex-row centered" style="padding: 1%; gap: 30px; justify-content: center;">
 
                 <!-- Fullscreen testing -->
                 <img src="img/Fine Art/model-female-sepia-pondering.jpg"  style="height: 532px;" onclick="openFullScreen(this.src)">
                 <img src="img/Fine Art/model-female-bw.jpg"  style="width: 399px; height: 532px;" onclick="openFullScreen(this.src)">
+                <img src="img/Fine Art/model-male.jpg" style="height: 532px; width: 410px;" onclick="openFullScreen(this.src)">
+                <img src="img/Fine Art/model-female-sepia.jpg" style=" height: 532px;" onclick="openFullScreen(this.src)">
+                <img src="img/Fine Art/boars head.jpg" style="height: 602px;" onclick="openFullScreen(this.src)">
+                <img src="img/Fine Art/rose basket.jpg" style="height: 601px;" onclick="openFullScreen(this.src)">
+                <img src="img/Fine Art/serj-portrait.jpg" style="height: 532px;" onclick="openFullScreen(this.src)">
+                <img src="img/Fine Art/doll conch shell.jpg" style="height: 532px; width: 410px;" onclick="openFullScreen(this.src)">
+                <img src="img/Fine Art/b&w-vase.jpg" style="height: 532px;" onclick="openFullScreen(this.src)">
+                <img src="img/Fine Art/model-female-sepia-facing-right.jpg" style="height: 532px;" onclick="openFullScreen(this.src)">
+                <img src="img/Fine Art/woman-portrait.jpg" style="height: 532px;" onclick="openFullScreen(this.src)">
+                <img src="img/Fine Art/self-portrait.jpg" style="height: 532px;" onclick="openFullScreen(this.src)">
+                <img src="img/Fine Art/korn_portrait.jpg" style="height: 532px;" onclick="openFullScreen(this.src)">
+                <img src="img/Fine Art/john-davis-heart-portrait.jpg" style="height: 532px;" onclick="openFullScreen(this.src)">
+                
+                
 
+                    <!-- <a target="_blank" href="img/Fine Art/model-female-sepia-pondering.jpg">
+                        <img src="img/Fine Art/model-female-sepia-pondering.jpg" style="height: 532px;">
+                    </a>
+                
+                    <a target="_blank" href="img/Fine Art/model-female-bw.jpg">
+                        <img src="img/Fine Art/model-female-bw.jpg" style="width: 399px; height: 532px;"> <!- - Bigger: width: 756px; height: 1008px; Medium: width: 567px; height: 756px; Smaller: - ->
+                    </a>
 
-                <a target="_blank" href="img/Fine Art/model-female-sepia-pondering.jpg">
-                    <img src="img/Fine Art/model-female-sepia-pondering.jpg" style="height: 532px;">
-                </a>
+                    <a target="_blank" href="img/Fine Art/model-male.jpg">
+                        <img src="img/Fine Art/model-male.jpg" style="height: 532px; width: 410px;">
+                    </a>
+                    
+                    <a target="_blank" href="img/Fine Art/model-female-sepia.jpg">
+                        <img src="img/Fine Art/model-female-sepia.jpg" style=" height: 532px;">
+                    </a> -->
                
-                <a target="_blank" href="img/Fine Art/model-female-bw.jpg">
-                    <img src="img/Fine Art/model-female-bw.jpg" style="width: 399px; height: 532px;"> <!-- Bigger: width: 756px; height: 1008px; Medium: width: 567px; height: 756px; Smaller: -->
-                </a>
 
-                <a target="_blank" href="img/Fine Art/model-male.jpg">
-                    <img src="img/Fine Art/model-male.jpg" style="height: 532px; width: 410px;">
-                </a>
-                
-                <a target="_blank" href="img/Fine Art/model-female-sepia.jpg">
-                    <img src="img/Fine Art/model-female-sepia.jpg" style=" height: 532px;">
-                </a>
-                
             </div>
 
             <!-- <br> -->
 
-            <div class="flex-row" style="justify-content: center; gap: 3px">
-                <a target="_blank" href="img/Fine Art/boars head.jpg">
+            <div class="flex-row" style="justify-content: center; align-content: center; gap: 3px;">
+
+                <!-- Fullscreen Testing -->
+                <!-- <img src="img/Fine Art/boars head.jpg" style="height: 602px;" onclick="openFullScreen(this.src)">
+                <img src="img/Fine Art/rose basket.jpg" style="height: 601px;" onclick="openFullScreen(this.src)"> -->
+
+                <!-- <a target="_blank" href="img/Fine Art/boars head.jpg">
                     <img src="img/Fine Art/boars head.jpg" style="width:780px; height: 602px;">
                 </a>
 
                 <a target="_blank" href="img/Fine Art/rose basket.jpg">
                     <img src="img/Fine Art/rose basket.jpg" style="width: 793px; height: 601px;">
-                </a>
+                </a> -->
+
             </div>
 
             <!-- <br> -->
-            <div class="flex-row" style="justify-content: center; gap: 5px;">
-                
-                <a target="_blank" href="img/Fine Art/doll conch shell.jpg">
+            <div class="flex-row" style="justify-content: center; gap: 3px;">
+                <!-- <img src="img/Fine Art/serj-portrait.jpg" style="height: 532px;" onclick="openFullScreen(this.src)">
+                <img src="img/Fine Art/doll conch shell.jpg" style="height: 532px; width: 410px;" onclick="openFullScreen(this.src)">
+                <img src="img/Fine Art/b&w-vase.jpg" style="height: 532px;" onclick="openFullScreen(this.src)">
+                <img src="img/Fine Art/self-portrait.jpg" style="height: 532px;" onclick="openFullScreen(this.src)">
+                 -->
+                <!-- <a target="_blank" href="img/Fine Art/doll conch shell.jpg">
                     <img src="img/Fine Art/doll conch shell.jpg" style="height: 532px; width: 410px;">
                 </a>
 
                 <a target="_blank" href="img/Fine Art/model-female-sepia-facing-right.jpg">
                     <img src="img/Fine Art/model-female-sepia-facing-right.jpg" style="height: 532px;">
-                </a>
-                
+                </a> -->
+
             </div>
+
+            <div class="flex-row" style="justify-content: center; gap: 30px; flex-wrap;">
+                <!-- <img src="img/Fine Art/korn_portrait.jpg" style="height: 532px;" onclick="openFullScreen(this.src)">
+                <img src="img/Fine Art/john-davis-heart-portrait.jpg" style="height: 532px;" onclick="openFullScreen(this.src)">
+                <img src="img/Fine Art/model-female-sepia-facing-right.jpg" style="height: 532px;" onclick="openFullScreen(this.src)">
+                <img src="img/Fine Art/woman-portrait.jpg" style="height: 532px;" onclick="openFullScreen(this.src)"> -->
+                
+                <!-- <a target="_blank" href="img/Fine Art/doll conch shell.jpg">
+                    <img src="img/Fine Art/doll conch shell.jpg" style="height: 532px; width: 410px;">
+                </a>
+
+                <a target="_blank" href="img/Fine Art/model-female-sepia-facing-right.jpg">
+                    <img src="img/Fine Art/model-female-sepia-facing-right.jpg" style="height: 532px;">
+                </a> -->
+
+            </div>
+
         </div>
     </div>
 </div>

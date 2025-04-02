@@ -1,117 +1,75 @@
 <!DOCTYPE html>
-<html>
+<html class="bg-beige">
 <head>
     <meta charset="UTF-8" />
-    <title>Cicely's Portfolio Website</title>
+    <title>About Cicely</title>
+
+    <!-- Custom 'Sacramento Font'
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nova+Mono&family=Sacramento&display=swap" rel="stylesheet"> -->
+
     <link rel="stylesheet" href="myStyle.css">
-    <script src="javascriptFunctions.js"></script>
-    <script src = "mouseTrail.js"></script>
+    <script src="mousetrail.js"></script>
+    
 </head>
 
 <body class="bg-beige">
+    <div id = "canvas"> <!-- Overall section -->
+        <div id = flex-wrapper>
+            
+            <div id="mobileNav"> <!--Sidebar menu-->
+                <h1 style = "padding-left: 6%; padding-top: 3%;">
+                    <a href = "index.html" id = "nameLink">Cicely Parris</a>
+                </h1>
+    
+                <br>
+                <div class = "flex-col" id="sidebar">
+                    <a href="animations.html">Animations</a>
+                    <a href="#" onclick="showHidden('visDevLinks')">Visual Development</a>
 
-<div id = "canvas"> <!-- Overall section -->
-    <div id="flex-wrapper">
-        <div id="mobileNav"> <!--Sidebar menu-->
-            <h1 style = "padding-left: 6%; padding-top: 3%;">
-                <a href = "aboutMe.html" id = "nameLink">Cicely Parris</a>
-            </h1>
-            <br>
-                <table id = "sidebar">
+                    <div class="flex-col" id="visDevLinks" style="display: none;">
+                        <a href="characters.html">Characters</a>
+                        <a href="environments.html">Environments</a>
+                    </div>
+
+                    <a href="3D.html">3D</a>
+                    <a href="fine-art.html">Fine Art</a>
+                    <a href="illustrations.html">Illustrations</a>
+                </div>
+
+                <div class = "flex-col" id="sublinks">
+                    <a href = "index.html" style="color: gray;">About</a>
+                    <a href = "files/CV.pdf" target="_blank">CV</a>
+                </div>
+
+                <!-- <table id = "sidebar"> -->
                     <!-- <tr><td><a href="studio-work.html">Studio Work</a></td></tr>
                     <tr><td><a href="storyboards.html">Storyboards</a></td></tr> -->
-                    <tr><td><a href="animations.html">Animations</a></td></tr>
-                    <tr><td><a href="visual-development.html" onclick="showHidden('visDevLinks')">Visual Development</a></td></tr>
+                    <!-- <tr><td><a href="animations.html">Animations</a></td></tr>
+                    <tr><td><a href="illustrations.html">Illustrations</a></td></tr>
+                    <tr><td><a href="visual-development.html">Visual Development</a></td></tr>
                     <tr><td><a href="3D.html">3D</a></td></tr>
                     <tr><td><a href="fine-art.html">Fine Art</a></td></tr>
-                    <tr><td><a href="illustrations.html">Illustrations</a></td></tr>
                 </table>
-                
+                    
                 <table id = "sublinks">
-                    <tr><td><a href = "aboutMe.html">About</a></td></tr>
+                    <tr><td><a href = "index.html" style="color: gray;">About</a></td></tr>
                     <tr><td><a href = "files/CV.pdf" target="_blank">CV</a></td></tr>
-                </table>
-        </div>
+                </table> -->
+            </div>
 
-        <div id = "mainContent"> <!-- Content next to sidebar -->
-            <h2>Hello</h2>
-            <img src="img/pic2.jpg">
-            <h2>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-                aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-                aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-                aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-                aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-                aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-                aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-                aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-                aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-                aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-                aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-                aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-                aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-                aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-                aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-                aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-                aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-                aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-                aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-                aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-                aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-                aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-                aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-                aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-                aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-                aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-                aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-                aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-                aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-                aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-                aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-                aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-                aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-                aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-                aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-                aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-                aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-                aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-                aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-                aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-                aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-                aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-                aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-                aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-                aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-                aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-                aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-                aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-                aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-                aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-                aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-                aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-                aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-                aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-                aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-                aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-                aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-                aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-                aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-                aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-                aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-                aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-                aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-                aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-                aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-                aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-                aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-                aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-                aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-                aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-                aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-                aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-            </h2>
+            <div id="portrait"> <!-- Content next to sidebar -->
+                <img src="img/portrait.svg">
+            </div>
+    
+            <div id = "subContent"> <!-- Content next to main content-->
+                <p style="font-family: New-Class;">
+                    Cicely Parris is a senior student attending the University of South Florida for Animation and Digital Modeling. She does multimedia work, with a strong emphasis on figure and portraiture. When she’s not busy doing late night work, she enjoys building miniature book nooks and taking her cats on walks.
+                </p>
+            </div>
         </div>
     </div>
-</div>
-    
+    <script src="javascriptFunctions.js"></script>
 </body>
 </html>
