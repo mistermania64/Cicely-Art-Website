@@ -90,6 +90,11 @@ font-style: normal;
     border: 3px solid black;
 }
 
+.flex-row > a
+{
+    border: 2px solid black;
+}
+
 .grid-container > video:hover
 {
    
@@ -201,7 +206,7 @@ font-style: normal;
     ". image-viewer ."
     ". cow .";
 
-    column-gap: 10px;
+    row-gap: 30px;
 }
 
 .res-640p
@@ -284,12 +289,12 @@ table a
 
 #portrait
 {
-    /* min-width: 50%; */
-    position: relative;
+    max-width: fit-content;
+    /* position: relative; */
     /* padding-top: 1%; */
     /* padding-left: 25vh; */
     /* left: 250px; */
-    /* border-style: solid; */
+    border-style: solid;
     border-color: blue;
 }
 
@@ -307,7 +312,7 @@ table a
     /* max-width: 18%; */
     font-size: 25px;
     top: 200px;
-    width: 40%;
+    width: 60%;
     padding: 0% 5%;
     /* height: 563px;
     left: 900px;
@@ -522,5 +527,19 @@ td a:hover
         "walkin"
         "final-label"
         "final";
+    }
+
+    #subContent
+    {
+        position: relative;
+        /* max-width: 18%; */
+        font-size: 25px;
+        width: 60%;
+        padding: 0% 5%;
+        /* height: 563px;
+        left: 900px;
+        bottom: 600px; */
+        /* border-style: solid; */
+        overflow-wrap: break-word;
     }
 }
