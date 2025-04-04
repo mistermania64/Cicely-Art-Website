@@ -8,7 +8,7 @@ html, body, div, #flex-wrapper
 
 /* Cursor */
 body {
-    cursor: url("img/Cursors/awesomeFace.png") auto;
+    cursor: url("img/Cursors/pinkCursor.png") auto;
 }
 /* 
 a:hover{
@@ -294,7 +294,7 @@ table a
     /* padding-top: 1%; */
     /* padding-left: 25vh; */
     /* left: 250px; */
-    border-style: solid;
+    /* border-style: solid; */
     border-color: blue;
 }
 
