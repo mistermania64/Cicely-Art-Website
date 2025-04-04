@@ -1,15 +1,11 @@
 /* html, body { max-width: 100%; overflow-x: hidden; } */
 
 /* Borders Toggle */
-html, body, div, #flex-wrapper
+/* html, body, div, #flex-wrapper
 {
-    /* border-style: solid; */
-}
+    / * border-style: solid; * /
+} */
 
-/* Cursor */
-body {
-    cursor: url("img/Cursors/pinkCursor.png") auto;
-}
 /* 
 a:hover{
     cursor: url("img/Cursors/awesomeFace.png") auto !important;
@@ -20,6 +16,11 @@ a:hover{
 @font-face {
     font-family: New-Class;
     src: url('fonts/NewClass-w10oz.ttf');
+}
+
+/* Cursor */
+body {
+    cursor: url("pinkCursor.png") auto;
 }
 
 .sacramento-regular {
@@ -509,26 +510,7 @@ td a:hover
         grid-template-columns: 1fr;
     }
 
-    #animations-grid
-    {
-        grid-template-columns: 1fr;
-
-        grid-template-areas:
-        "animations=label"
-        "cats-label"
-        "cats"
-        "smoker-label"
-        "smoker"
-        "rotoscope-label"
-        "rotoscope"
-        "cairo-label"
-        "cairo"
-        "walkin-label"
-        "walkin"
-        "final-label"
-        "final";
-    }
-
+    
     #subContent
     {
         position: relative;
@@ -542,4 +524,42 @@ td a:hover
         /* border-style: solid; */
         overflow-wrap: break-word;
     }
+
+    #animations-grid2
+    {
+        grid-template-columns: 1fr;
+
+        grid-template-areas:
+        "animations-label"
+        "cats-label"
+        "cats"
+        "smoker-label"
+        "smoker"
+        "roto-label"
+        "rotoscope"
+        "cairo-label"
+        "cairo"
+        "walkin-label"
+        "walkin"
+        "final-label"
+        "final";
+    }
+
+    #environments-grid
+    {
+        grid-template-columns: 1fr;
+        column-gap: 10px;
+        row-gap: 5px;
+        grid-template-areas: 
+        "environments-label"
+        "."
+        /* " . . ." */
+        /* " . . ." include if labels*/
+        "roadsign" 
+        "beachhouse" 
+        "seagulls"
+        "phone_line" 
+        "leaves";
+    }
+
 }
