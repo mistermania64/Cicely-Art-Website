@@ -20,7 +20,7 @@ a:hover{
 
 /* Cursor */
 body {
-    cursor: url("pinkCursor.png") auto;
+    cursor: url("pinkCursor.png") pointer;
 }
 
 .sacramento-regular {
@@ -91,7 +91,7 @@ font-style: normal;
     border: 3px solid black;
 }
 
-.flex-row > a
+.flex-row > a>img
 {
     border: 2px solid black;
 }
@@ -110,6 +110,8 @@ font-style: normal;
 {
     border: 3px solid black;
 }
+
+
 
 /* Grid Areas */
 #animations-grid
@@ -138,7 +140,11 @@ font-style: normal;
         "cairo          smoker        final"
         "cairo            .            final"
         "cairo        walkin-label     final"
-        "cairo          walkin            final";
+        "cairo          walkin            final"
+        "headturn-label    walkin            haiku-label"
+        "headturn           walkin                   haiku"
+        "headturn           .                        haiku";
+
 }
 
 #animations-grid2-flex
@@ -154,22 +160,83 @@ font-style: normal;
 
 #characters-grid
 {
-    column-gap: 10px;
+    column-gap: 20px;
+    row-gap: 30px;
     justify-items: start;
     align-items: start;
     grid-template-columns: auto auto auto;
     grid-template-areas:
-    "characters-label characters-label"
-    "bleeding jon-snow"
-    "bleeding lighting"
-    "cyborg lighting"
-    "cyborg crusader"
-    "headshots meowverse"
-    "granny animal-prints"
-    "granny fortune"
-    "skater fortune"
-    "skater fortune";
+    "characters-label characters-label characters-label"
+    "bleeding  . jon-snow"
+    "bleeding  . lighting"
+    "cyborg  . lighting"
+    "cyborg .  crusader"
+    "headshots .  meowverse"
+    "granny  . animal-prints"
+    "granny  . headturn"
+    "skater  . headturn"
+    "skater  . fortune"
+    ".  . fortune";
+    /* "characters-label characters-label characters-label"
+    "bleeding  . jon-snow"
+    "bleeding  . ."
+    "bleeding   . lighting"
+    ". . lighting"
+    "cyborg . lighting"
+    "cyborg   . ."
+    "cyborg  . crusader"
+    ". . crusader"
+    "headshots .  crusader"
+    "headshots .  ."
+    "headshots . meowverse"
+    ". . meowverse"
+    "granny . meowverse"
+    "granny . ."
+    "granny  . animal-prints"
+    ".  . animal-prints"
+    "skater . animal-prints"
+    "skater . ."
+    "skater  . headturn"
+    "skater  . headturn"
+    ". . headturn"
+    ".  . headturn"
+    "fortune . ."; */
 }
+
+#characters-grid2
+{
+    column-gap: 10px;
+    row-gap: 1px;
+    justify-items: start;
+    align-items: start;
+    grid-template-columns: auto auto auto;
+    grid-template-areas:
+    "characters-label characters-label characters-label"
+    "bleeding  . jon-snow"
+    "bleeding  . ."
+    "bleeding   . lighting"
+    ". . lighting"
+    "cyborg . lighting"
+    "cyborg   . ."
+    "cyborg  . crusader"
+    ". . crusader"
+    "headshots .  crusader"
+    "headshots .  ."
+    "headshots . meowverse"
+    ". . meowverse"
+    "granny . meowverse"
+    "granny . ."
+    "granny  . animal-prints"
+    ".  . animal-prints"
+    "skater . animal-prints"
+    "skater . ."
+    "skater  . headturn"
+    "skater  . headturn"
+    ". . headturn"
+    ".  . headturn"
+    "fortune . .";
+}
+
 
 #characters-grid > a>img
 {
@@ -178,8 +245,8 @@ font-style: normal;
 
 #environments-grid
 {
-    column-gap: 10px;
-    row-gap: 5px;
+    column-gap: 100px;
+    row-gap: 10px;
     grid-template-areas: 
     ". environments-label . "
     " . . ."
@@ -284,8 +351,13 @@ table a
     width: 70%;
     /* padding-top: 5%; */
     /* padding-left: 25vh; */
-    border-style: solid;
+    /* border-style: solid; */
     border-color: red;
+}
+
+.flex-col > .image-viewer>img
+{
+    border: solid 3px black;
 }
 
 #portrait
@@ -539,10 +611,14 @@ td a:hover
         "rotoscope"
         "cairo-label"
         "cairo"
+        "headturn-label"
+        "headturn"
         "walkin-label"
         "walkin"
         "final-label"
-        "final";
+        "final"
+        "haiku-label"
+        "haiku";
     }
 
     #environments-grid

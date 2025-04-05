@@ -43,9 +43,9 @@ const catArr = [
 ];
 
 const shipArr = [
-    "img/3D/fullres/ship_front.jpg",
-    "img/3D/fullres/ship_side.jpg",
-    "img/3D/fullres/ship_flat.jpg"
+    "img/3D/ship_front.jpg",
+    "img/3D/ship_side.jpg",
+    "img/3D/ship_flat.jpg"
 ]
 
 // const goodMorningSlider = new ImageSlider('goodMorningSlider', goodMorningArr, goodMorningImg);
