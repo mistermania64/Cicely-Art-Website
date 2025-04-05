@@ -582,6 +582,12 @@ td a:hover
         grid-template-columns: 1fr;
     }
 
+    #animations-grid2 > video
+    {
+        max-width: 320px;
+        max-height: 240px;;
+    }
+
     
     #subContent
     {
