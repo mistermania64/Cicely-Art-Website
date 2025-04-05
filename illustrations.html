@@ -4,11 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Illustrations</title>
-    <link rel="stylesheet" href="myStyle.css">
-    <script src="mousetrail.js"></script>
+    <link rel="stylesheet" href="css/myStyle.css">
+
+    <script src="js/imageSlider.js"></script>
+    
 </head>
 <body class="bg-beige">
-    
 <div id = "canvas"> <!-- Overall section -->
     <div id = "flex-wrapper">
         <div id="mobileNav"> <!--Sidebar menu-->
@@ -45,10 +46,10 @@
         <div class = "grid-container centered" id="illustrations-grid">
             <label style="font-family: New-Class; padding: 2%; font-size: 40px; grid-area: illustrations-label" class="flex-row centered">Illustrations</label>
 
-            <div class = "image-viewer" style="grid-area: image-viewer">
-                <button class = "arrow left" onclick="prevImage()">&#10094;</button>
-                <img id = "viewerImage" class="res-640p" src="img/Illustration/good-morning-neon.JPG" alt = "Image Viewer">
-                <button class = "arrow right" onclick="nextImage()">&#10095;</button>
+            <div class = "image-viewer res-640p" id = "goodMorningSlider" style="grid-area: image-viewer;">
+                <button class = "arrow left" onclick="goodMorningSlider.prevImage()">&#10094;</button>
+                <img id = "goodMorningImg" class="res-640p" src="img/Illustration/good-morning-neon.JPG" alt = "Image Viewer">
+                <button class = "arrow right" onclick="goodMorningSlider.nextImage()">&#10095;</button>
             </div> 
 
             <a target="_blank" href="img/Illustration/fullres/girl-with-cow.jpg" style="grid-area: cow;">
@@ -59,8 +60,14 @@
 
     </div>
 </div>
-<script src="javascriptFunctions.js"></script>
-<script src="fullscreenViewer.js"></script>
+<script src="js/javascriptFunctions.js"></script>
+<script src="js/fullscreenViewer.js"></script>
+<script src="js/mousetrail.js"></script>
+
+<script>
+    const goodMorningSlider = new ImageSlider('goodMorningSlider', "goodMorningImg", goodMorningArr);
+</script>
+
 
 </body>
 </html>

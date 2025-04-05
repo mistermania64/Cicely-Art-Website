@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Animations</title>
-    <link rel="stylesheet" href="myStyle.css">
+    <link rel="stylesheet" href="css/myStyle.css">
 </head>
 <body class="bg-beige">
     
@@ -12,23 +12,25 @@
     <div id = "flex-wrapper">
         <div id="mobileNav"> <!--Sidebar menu-->
             <h1 style = "padding-left: 6%; padding-top: 3%;">
-                <a href = "index.html" id ="nameLink">Cicely Parris</a>
+                <a href = "index.html" id = "nameLink">Cicely Parris</a>
             </h1>
 
             <br>
             <div class = "flex-col" id="sidebar">
-                <a href="animations.html" style="color: grey;">Animations</a>
+                <a href="animations.html" style="color: gray;">Animations</a>
+                <!-- <a href="#" onclick="showHidden('visDevLinks')">Visual Development</a> -->
+                <a href="characters.html">Characters</a>
+                <a href="environments.html">Environments</a>
                 
-                <a href="#" onclick="showHidden('visDevLinks')">Visual Development</a>
-
-                <div class="flex-col" id="visDevLinks" style="display: none;">
+                <!-- <div class="flex-col" id="visDevLinks" style="display: none;">
                     <a href="characters.html">Characters</a>
                     <a href="environments.html">Environments</a>
-                </div>
+                </div> -->
 
-                <a href="3D.html">3D</a>
                 <a href="fine-art.html">Fine Art</a>
-                <a href="illustrations.html">Illustrations</a>
+                <a href="3D.html">3D</a>
+                
+                <!-- <a href="illustrations.html">Illustrations</a> -->
             </div>
 
             <div class = "flex-col" id="sublinks">
@@ -37,7 +39,7 @@
             </div>
         </div>
 
-        <div class = "grid-container" id="animations-grid2" style="gap: 15px; padding-left: 50px;"> 
+        <div class = "grid-container" id="animations-grid2" style="gap: 15px; max-width: 70%;"> 
 
             <label style="font-family: New-Class; padding: 2%; font-size: 40px; grid-area: animations-label" class="centered">Animations</label>
 
@@ -64,6 +66,6 @@
 </div>
 
 </body>
-<script src="javascriptFunctions.js"></script>
-<script src="mousetrail.js"></script>
+<script src="js/javascriptFunctions.js"></script>
+<script src="js/mousetrail.js"></script>
 </html>
