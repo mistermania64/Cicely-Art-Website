@@ -9,6 +9,7 @@
 <body class="bg-beige">
     
 <div id = "canvas"> <!-- Overall section -->
+    <!-- <button id = "toggleMenuButton" onclick="showHidden('mobileNav')">Toggle Menu</button> -->
     <div id = "flex-wrapper">
         <div id="mobileNav"> <!--Sidebar menu-->
             <h1 style = "padding-left: 6%; padding-top: 3%;">
@@ -39,7 +40,7 @@
             </div>
         </div>
 
-        <div class = "grid-container" id="animations-grid2" style="gap: 15px; max-width: 70%;"> 
+        <div class = "grid-container" id="animations-grid2" style="row-gap: 20px; column-gap: 100px; max-width: 70%;"> 
 
             <label style="font-family: New-Class; padding: 2%; font-size: 40px; grid-area: animations-label" class="centered">Animations</label>
 
@@ -58,16 +59,15 @@
             <label class="centered" style="grid-area: smoker-label;">Smoker</label>
             <video src="video/animations/Smoker-1(1080p).m4v" controls style="width: 372px; height: 566px; grid-area: smoker;"></video> <!--496px by 755px-->
 
-            <label class="centered" style="grid-area: walkin-label;">Walkin'</label>
-            <video src="video/animations/Walkin-1(1080p).m4v" controls style="width: 400px; height: 400px; grid-area: walkin;"></video>
-
+            <label class="centered" style="grid-area: walkin-label; align-self: self-end;">Walkin'</label>
+            <video src="video/animations/Walkin-1(1080p).m4v" controls style="width: 400px; height: 400px; grid-area: walkin; align-self: self-start;"></video>
+ 
             <label class="centered" style="grid-area: headturn-label;">Headturn Test</label>
             <video src="video/animations/Headturn Parris-1.m4v" controls class="res-640p" style="grid-area: headturn;"></video>
 
             <label class="centered" style="grid-area: haiku-label;">Haiku</label>
             <video src="video/animations/Haiku-Parris-1.m4v" controls class="res-640p" style="grid-area: haiku;"></video>
-
-           
+    
         </div>
     </div>
 </div>
