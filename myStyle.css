@@ -145,6 +145,8 @@ font-style: normal;
         "headturn           walkin                   haiku"
         "headturn           .                        haiku";
 
+        /* margin-left: auto;
+        margin-right: auto; */
 }
 
 #animations-grid2-flex
@@ -177,30 +179,6 @@ font-style: normal;
     "skater  . headturn"
     "skater  . fortune"
     ".  . fortune";
-    /* "characters-label characters-label characters-label"
-    "bleeding  . jon-snow"
-    "bleeding  . ."
-    "bleeding   . lighting"
-    ". . lighting"
-    "cyborg . lighting"
-    "cyborg   . ."
-    "cyborg  . crusader"
-    ". . crusader"
-    "headshots .  crusader"
-    "headshots .  ."
-    "headshots . meowverse"
-    ". . meowverse"
-    "granny . meowverse"
-    "granny . ."
-    "granny  . animal-prints"
-    ".  . animal-prints"
-    "skater . animal-prints"
-    "skater . ."
-    "skater  . headturn"
-    "skater  . headturn"
-    ". . headturn"
-    ".  . headturn"
-    "fortune . ."; */
 }
 
 #characters-grid2
@@ -252,7 +230,7 @@ font-style: normal;
     " . . ."
     /* " . . ." */
     /* " . . ." include if labels*/
-    "roadsign beachhouse seagulls"
+    "roadsign cat beachhouse seagulls"
     "phone_line leaves .";
 }
 
@@ -575,8 +553,13 @@ td a:hover
 }
 
 /* Media Queries */
-@media (max-width: 768px)
+@media (max-width: 768px) /*Smartphones*/
 {
+    a 
+    {
+        font-size: xx-large;
+    }
+
     .grid-container
     {
         grid-template-columns: 1fr;
@@ -625,6 +608,9 @@ td a:hover
         "final"
         "haiku-label"
         "haiku";
+
+        margin-left: auto;
+        margin-right: auto;
     }
 
     #environments-grid
@@ -643,5 +629,27 @@ td a:hover
         "phone_line" 
         "leaves";
     }
+}
 
+@media (max-width: 2560px) /* 2020 Macbook Air */
+{
+    #animations-grid2
+    {
+        grid-template-columns: 2fr;
+
+        grid-template-areas:
+        "animations-label   animations-label"
+        "cats-label         roto-label"
+        "cats               rotoscope"
+        "smoker-label       walkin-label"
+        "smoker             walkin"
+        "cairo-label        final-label"
+        "cairo              final"
+        "headturn-label     haiku-label"
+        "headturn           haiku";
+
+        margin-left: auto;
+        margin-right: auto;
+    }
+   
 }
