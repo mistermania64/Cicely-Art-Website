@@ -126,7 +126,7 @@ font-style: normal;
         "final .";
 }
 
-#animations-grid2
+#animations-grid2-oldGood
 {
     display: grid;
     /* grid-template-columns: auto auto auto;
@@ -147,6 +147,29 @@ font-style: normal;
 
         /* margin-left: auto;
         margin-right: auto; */
+}
+
+#animations-grid2
+{
+    display: grid;
+    column-gap: 30px;
+    grid-template-columns: 2fr;
+
+    grid-template-areas:
+    "animations-label   animations-label"
+    "cats-label         roto-label"
+    "cats               rotoscope"
+    "cairo-label        final-label"
+    "cairo              final"
+    "headturn-label     haiku-label"
+    "headturn           haiku"
+    "smoker-label       ."
+    "smoker             walkin-label"
+    "smoker             walkin"
+    "smoker             .";
+
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #animations-grid2 > label
