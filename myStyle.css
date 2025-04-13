@@ -483,6 +483,11 @@ table#sublinks, th#sublinks, td#sublinks, div#sublinks
     color: grey;
 }
 
+.flex-col > video
+{
+    border: solid 3px black;
+}
+
 
 td a:link
 {
@@ -597,12 +602,14 @@ td a:hover
     {
         max-width: 320px;
         max-height: 240px;
+        border: solid 3px black;
     }
 
     .flex-col > video
     {
         max-width: 320px;
         max-height: 240px;
+        border: solid 3px black;
     }
 
 
@@ -673,7 +680,7 @@ td a:hover
     }
 }
 
-@media (max-width: 2560px) /* 2020 Macbook Air */
+@media (max-width: 1440px) /* 2020 Macbook Air */
 {
     #animations-grid2
     {
