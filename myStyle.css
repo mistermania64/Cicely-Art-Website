@@ -486,6 +486,12 @@ table#sublinks, th#sublinks, td#sublinks, div#sublinks
 .flex-col > video
 {
     border: solid 3px black;
+    margin-bottom: 20px;
+}
+
+.flex-col > label
+{
+    margin-top: 20px;
 }
 
 
@@ -585,9 +591,19 @@ td a:hover
     font-size: 24px;
 }
 
-/* Media Queries */
+
 @media (max-width: 768px) /*Smartphones*/
 {
+    #toggleMenuButton
+    {
+        display: block !important;
+    }
+
+    #mobileNav
+    {
+        display: none;
+    }
+
     a 
     {
         font-size: xx-large;
@@ -604,14 +620,33 @@ td a:hover
         max-height: 240px;
         border: solid 3px black;
     }
-
+    
     .flex-col > video
     {
-        max-width: 320px;
-        max-height: 240px;
-        border: solid 3px black;
+        max-width: 480px;
+        max-height: 270px;
+        margin-bottom: 20px;
+        /* border: solid 3px black; */
     }
 
+    /* VIDEO EDGE CASES */
+    .flex-col>#walkin
+    {
+        max-width: 300px;
+        max-height: 300px;
+    }
+
+    .flex-col>#headturn
+    {
+        max-width: 384px;
+        max-height: 360px;
+    }
+
+    .flex-col>#smoker
+    {
+        max-width: 248px;
+        max-height: 384px;
+    }
 
     
     #subContent
