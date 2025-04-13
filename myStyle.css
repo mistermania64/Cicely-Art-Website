@@ -96,6 +96,11 @@ font-style: normal;
     border: 2px solid black;
 }
 
+#cats-row > a>img
+{
+    border: solid 2px black;
+}
+
 .grid-container > video:hover
 {
    
@@ -391,8 +396,8 @@ table a
     /* max-width: 18%; */
     font-size: 25px;
     top: 200px;
-    width: 60%;
-    padding: 0% 5%;
+    /* width: 80%; */
+    padding: 0% 4%;
     /* height: 563px;
     left: 900px;
     bottom: 600px; */

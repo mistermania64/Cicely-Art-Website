@@ -15,8 +15,8 @@
 
 <body class="bg-beige">
     <div id = "canvas"> <!-- Overall section -->
+        <button id = "toggleMenuButton" onclick="showHidden('mobileNav')" style="display: none;">Toggle Menu</button>
         <div id = flex-wrapper>
-            
             <div id="mobileNav"> <!--Sidebar menu-->
                 <h1 style = "padding-left: 6%; padding-top: 3%;">
                     <a href = "index.html" id = "nameLink">Cicely Parris</a>
@@ -54,14 +54,34 @@
             </div>
             
             <div class = "flex-col">
-                <div id = "subContent"> 
-                    <p style="font-family: New-Class;">
-                        Cicely Parris is a senior student attending the University of South Florida for Animation and Digital Modeling. She does multimedia work, with a strong emphasis on figure and portraiture. When she's not busy doing late night work, she enjoys building miniature book nooks and taking her cats on walks.
-                    </p>
-                    <p style="font-family: New-Class;">
-                        Email: <a href="mailto:cmparrisart@gmail.com">cmparrisart@gmail.com</a>
-                    </p>
+
+                <div class="flex-row" id="subContent">
+                    
+                        <p style="font-family: New-Class;">
+                            Cicely Parris is a senior student attending the University of South Florida for Animation and Digital Modeling. She does multimedia work, with a strong emphasis on figure and portraiture. When she's not busy doing late night work, she enjoys building miniature book nooks and taking her cats on walks.
+                        </p>
+                        <p style="font-family: New-Class;">
+                            Email: <a href="mailto:cmparrisart@gmail.com">cmparrisart@gmail.com</a>
+                        </p>
+
+                        <div class="flex-row" id="cats-row" style="gap: 8px;">
+                            <a target="_blank" href="img/cats/fullres/callieField.jpg">
+                                <img src="img/cats/callieField.jpg" style="height: 532px;">
+                            </a> 
+                            <a target="_blank" href="img/cats/fullres/mishaPost.jpg">
+                                <img src="img/cats/mishaPost.jpg" style="height: 532px;">
+                            </a> 
+                            <a target="_blank" href="img/cats/fullres/freyaRibbon.jpg">
+                                <img src="img/cats/freyaRibbon.jpg" style="height: 532px;">
+                            </a> 
+                            <a target="_blank" href="img/cats/fullres/bashaTowel.jpg">
+                                <img src="img/cats/bashaTowel.jpg" style="height: 532px;">
+                            </a> 
+                        </div>
+                    
                 </div>
+
+
             </div>
         </div>
     </div>
