@@ -698,6 +698,13 @@ td a:hover
         "smoker-label       ."
         "smoker             walkin-label"
         "smoker             walkin"
+        /*delete later*/
+        "smoker             walkin"
+        "smoker ."
+        "smoker ."
+        "smoker ."
+        "smoker ."
+        /*delete later*/
         "smoker             .";
 
         margin-left: auto;
