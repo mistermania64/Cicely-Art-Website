@@ -101,7 +101,7 @@ font-style: normal;
    
 }
 
-.grid-container > label
+.grid-container, .flex-col, .flex-row > label
 {
     font-family: New-Class;
 }
@@ -596,8 +596,15 @@ td a:hover
     #animations-grid2 > video
     {
         max-width: 320px;
-        max-height: 240px;;
+        max-height: 240px;
     }
+
+    .flex-col > video
+    {
+        max-width: 320px;
+        max-height: 240px;
+    }
+
 
     
     #subContent
@@ -612,6 +619,13 @@ td a:hover
         bottom: 600px; */
         /* border-style: solid; */
         overflow-wrap: break-word;
+    }
+
+    #animations-label
+    {
+        /* margin-left: 0; */
+        /* padding-left: 100px */
+        /* margin-right: 0; */
     }
 
     #animations-grid2
