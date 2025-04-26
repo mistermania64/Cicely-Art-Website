@@ -619,17 +619,17 @@ td a:hover
         grid-template-columns: 1fr;
     }
 
-    #animations-grid2 > video
+    /* #animations-grid2 > video
     {
         max-width: 320px;
         max-height: 240px;
         border: solid 3px black;
-    }
+    } */
     
     .flex-col > video
     {
-        max-width: 480px;
-        max-height: 270px;
+        max-width: 384px;
+        max-height: 216px;
         margin-bottom: 20px;
         /* border: solid 3px black; */
     }
@@ -649,7 +649,7 @@ td a:hover
 
     .flex-col>#smoker
     {
-        max-width: 248px;
+        max-width: 252px;
         max-height: 384px;
     }
 
